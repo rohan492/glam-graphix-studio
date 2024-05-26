@@ -6,7 +6,6 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/lib/utils";
 
-
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
@@ -52,8 +51,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Videography", "Photography", "Graphic Design"];
+  const rightLists = ["Animations", "Video Editing", "Flyer Design"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,9 +66,12 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "contact@glamgraphix.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
   };
 
   return (
@@ -89,18 +91,33 @@ export const BentoGridItem = ({
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
-        <div className="w-full h-full absolute">
-          {img && (
-            <img
-              src={img}
-              alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
+        {id !== 5 ? (
+          <div className="w-full h-full absolute">
+            {img && (
+              <img
+                src={img}
+                alt={img}
+                className={cn(imgClassName, "object-fit object-center ")}
+              />
+            )}
+          </div>
+        ) : (
+          <div className="w-full h-full absolute">
+            <video
+              src={"/bridalVid.mp4"}
+              className={cn(imgClassName, "object-fit object-center")}
+              style={{ transform: "rotate(270deg)" }}
+              controls
+              autoPlay
+              loop
+              muted
             />
-          )}
-        </div>
+          </div>
+        )}
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
@@ -175,16 +192,13 @@ export const BentoGridItem = ({
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
+              <div className={`absolute -bottom-5 right-0 block`}>
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Email is Copied!" : "Copy our Email"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
