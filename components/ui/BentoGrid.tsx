@@ -107,7 +107,7 @@ export const BentoGridItem = ({
               src={"/bridalVid.mp4"}
               className={cn(imgClassName, "object-fit object-center")}
               style={{ transform: "rotate(270deg)" }}
-              controls
+              controls={false}
               autoPlay
               loop
               muted

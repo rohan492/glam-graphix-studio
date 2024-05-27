@@ -164,6 +164,7 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("@tailwindcss/aspect-ratio"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
