@@ -55,7 +55,7 @@ export const gridItems = [
     description: "Our Motto",
     className: "md:col-span-3 md:row-span-2 min-h-[30vh]",
     imgClassName:
-      "absolute right-[-10px] bottom-[-8rem] md:bottom-[-14rem] w-[80%] rounded-lg",
+      "absolute right-[-10px] bottom-[-8rem] md:bottom-[-15rem] w-[80%] rounded-lg",
     titleClassName: "justify-end h-full w-[80%]",
     img: "",
     spareImg: "/grid.svg",
