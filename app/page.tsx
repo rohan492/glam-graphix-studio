@@ -14,7 +14,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const Home = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-      <div className="relative w-[115%] md:w-[110%] h-screen aspect-w-9 aspect-h-16 md:aspect-w-16 md:aspect-h-9 z-50">
+      {/* <div className="relative w-[115%] md:w-[110%] h-screen aspect-w-9 aspect-h-16 md:aspect-w-16 md:aspect-h-9 z-50">
         {" "}
         <video
           src="/mainVid.mp4"
@@ -24,7 +24,7 @@ const Home = () => {
           loop
           muted
         />
-      </div>
+      </div> */}
       {/* <div className="h-[30%] absolute -top-14 z-50">
         <video
           src={"/mainVid.mp4"}
@@ -39,7 +39,7 @@ const Home = () => {
         />
       </div> */}
       <div className="max-w-7xl w-full">
-        {/* <FloatingNav navItems={navItems} /> */}
+        <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
         {/* <RecentProjects />

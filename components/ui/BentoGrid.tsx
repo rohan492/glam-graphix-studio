@@ -91,7 +91,7 @@ export const BentoGridItem = ({
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
-        {id !== 5 ? (
+        {id !== 5 && id !== 7 ? (
           <div className="w-full h-full absolute">
             {img && (
               <img
@@ -101,7 +101,7 @@ export const BentoGridItem = ({
               />
             )}
           </div>
-        ) : (
+        ) : id === 5 ? (
           <div className="w-full h-full absolute">
             <video
               src={"/bridalVid.mp4"}
@@ -113,6 +113,20 @@ export const BentoGridItem = ({
               muted
             />
           </div>
+        ) : id === 7 ? (
+          <div className="w-full h-full absolute">
+            <video
+              src={"/mainVid.mp4"}
+              className={cn(imgClassName, "object-cover object-center")}
+              // style={{ transform: "rotate(270deg)" }}
+              controls={false}
+              autoPlay
+              loop
+              muted
+            />
+          </div>
+        ) : (
+          <></>
         )}
         <div
           className={`absolute right-0 -bottom-5 ${

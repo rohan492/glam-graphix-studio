@@ -39,6 +39,17 @@ export const gridItems = [
     spareImg: "",
   },
   {
+    id: 7,
+    title: "Your Special Moments Turned Into Memories",
+    description: "",
+    className:
+      "lg:col-span-5 md:col-span-6 md:row-span-4 md:min-h-[80vh] min-h-[40vh]",
+    imgClassName: "w-full h-full opacity-75",
+    titleClassName: "justify-end h-full w-[60%]",
+    img: "",
+    spareImg: "",
+  },
+  {
     id: 4,
     title: "One Stop Solution for Everything Design",
     description: "",
