@@ -15,7 +15,7 @@ export const gridItems = [
       "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] min-h-[25vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/wedding1.jpg",
+    img: "/wedding1.webp",
     spareImg: "",
   },
   {
@@ -58,7 +58,7 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-end h-full w-1/2",
     img: "",
-    spareImg: "/flyer3.png",
+    spareImg: "/flyer3.webp",
   },
 
   {

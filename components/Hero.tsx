@@ -43,11 +43,11 @@ const Hero = () => {
           <ImagesSlider
             className="h-[80vh] w-full"
             images={[
-              "/hImg2.png",
-              "/heroImg2.png",
-              "/heroImg4.png",
-              "/heroImg1.png",
-              "/hImg1.png",
+              "/hImg2.webp",
+              "/heroImg2.webp",
+              "/heroImg4.webp",
+              "/heroImg1.webp",
+              "/hImg1.webp",
             ]}
           >
             <TextInHero />
@@ -56,7 +56,7 @@ const Hero = () => {
         <MediaRendering minWidth="1024" maxWidth={null}>
           <ImagesSlider
             className="h-[80vh] w-full"
-            images={["/hImg2.png", "/hImg1.png", "/fImg.png", "/test3.png"]}
+            images={["/hImg2.webp", "/hImg1.webp", "/fImg.webp", "/test3.webp"]}
           >
             <TextInHero />
           </ImagesSlider>

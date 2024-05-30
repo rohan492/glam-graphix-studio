@@ -107,18 +107,7 @@ export const StickyScroll = ({
           contentClassName
         )}
       >
-        {activeCard !== 5 ? (
-          content[activeCard].content ?? null
-        ) : (
-          <video
-            src={"/service2.mp4"}
-            className={cn("object-fit object-center")}
-            controls={false}
-            autoPlay
-            loop
-            muted
-          />
-        )}
+        {content[activeCard].content ?? null}
       </motion.div>
     </motion.div>
   );

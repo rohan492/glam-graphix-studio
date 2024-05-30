@@ -14,7 +14,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/service1.png"
+          src="/service1.webp"
           width={300}
           height={300}
           className="h-full w-full object-fit"
@@ -49,7 +49,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/service2.png"
+          src="/service2.webp"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -66,7 +66,7 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
         <Image
-          src="/service3.png"
+          src="/service3.webp"
           width={300}
           height={300}
           className="h-full w-full object-fit"
