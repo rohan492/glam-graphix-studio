@@ -57,7 +57,7 @@ export const gridItems = [
       "lg:col-span-2 md:col-span-3 md:row-span-1 min-h-[25vh] md:min-h-[35vh]",
     imgClassName: "",
     titleClassName: "justify-end h-full w-1/2",
-    img: "/grid.svg",
+    img: "",
     spareImg: "/flyer3.png",
   },
 
@@ -70,7 +70,7 @@ export const gridItems = [
       "absolute right-[-10px] bottom-[-8rem] md:bottom-[-15rem] w-[80%] rounded-lg",
     titleClassName: "justify-end h-full w-[80%]",
     img: "",
-    spareImg: "/grid.svg",
+    spareImg: "",
   },
   {
     id: 6,
