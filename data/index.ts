@@ -1,9 +1,7 @@
 export const navItems = [
-  // { name: "Hero", link: "#hero" },
   { name: "About", link: "#about" },
   { name: "Services", link: "#services" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "Members", link: "#members" },
   { name: "Process", link: "#process" },
   { name: "Contact", link: "#contact" },
 ];
@@ -188,41 +186,65 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Mohit Sati",
-    desc: "3+ Years of Experience in Film Making, Photography, Video Editing & Graphic Designing.",
+    title: "INITIAL CONSULTATION",
+    desc: "This is where we get to know you, your love story and build a personal connection. We discuss your vision and our services to provide you with a customized quote.",
     className: "md:col-span-2",
-    thumbnail: "/mohitPh.webp",
-    link: "https://www.linkedin.com/in/mohit-sati-75695822a/",
+    thumbnail: "",
+    link: "",
   },
   {
     id: 2,
-    title: "Pooja",
-    desc: "Her Experience Comes Here. Please provide the same to Rohan.",
+    title: "RESERVING YOUR DATE",
+    desc: "Once you are ready to proceed with reserving our team, a signed contract and deposit will secure your dates",
     className: "md:col-span-1 justify-self-center", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-    link: "https://www.linkedin.com/in/mohit-sati-75695822a/",
+    thumbnail: "",
+    link: "",
   },
   {
     id: 3,
-    title: "Rohan Mathur",
-    desc: "2.5+ Years Experience in Software Development, Freelancing & Event Management.",
+    title: "CREATIVE CONSULTATION",
+    desc: "The creative consultation is scheduled to discuss your e-shoot and details regarding your events. We combine ideas, brainstorm locations and create a timeline and storyboard.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/rohanPh.webp",
-    link: "https://www.linkedin.com/in/therohanmathur/",
+    thumbnail: "",
+    link: "",
+  },
+  {
+    id: 4,
+    title: "EVENT DAY",
+    desc: "Our team arrives motivated and inspired to film your event. By providing direction and communicating with you and your family, we capture all your timeless and memorable moments.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "",
+    link: "",
+  },
+  {
+    id: 5,
+    title: "FINAL PRODUCT",
+    desc: "Delivered within 4-7 months, your final product is a fully mastered edit uploaded to our online digital streaming service.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "",
+    link: "",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/insta.svg",
+    link: "https://www.instagram.com/glamgraphixstudios?igsh=OGRhZG9vZXhjOHRy",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/youtube.svg",
+    link: "https://youtube.com/@glamgraphixstudios?si=tKc6seUmFEX59YQ2",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/therohanmathur/",
+  },
+  {
+    id: 4,
+    img: "/facebook.svg",
+    link: "https://www.facebook.com/profile.php?id=61558143161368&mibextid=ZbWKwL",
   },
 ];
