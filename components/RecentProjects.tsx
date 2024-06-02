@@ -29,7 +29,9 @@ const RecentProjects = () => {
                     item.id === 4
                       ? "-bottom-20"
                       : item.id === 1
-                      ? "-bottom-4"
+                      ? "-bottom-12"
+                      : item.id === 3
+                      ? "bottom-1.5"
                       : "bottom-0"
                   }`}
                 />
