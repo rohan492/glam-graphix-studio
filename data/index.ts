@@ -3,6 +3,8 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Services", link: "#services" },
   { name: "Testimonials", link: "#testimonials" },
+  { name: "Members", link: "#members" },
+  { name: "Process", link: "#process" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -122,33 +124,31 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Collaborating with the team at Glam Graphix Studios was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional results were evident throughout our wedding. The team's enthusiasm for every facet of development truly stands out.",
+    name: "Priti Singhania",
     title: "Director of AlphaStream Technologies",
+    image: "/testimonial1.webp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Working alongside Glam Graphix Studios was an absolute pleasure. Their commitment to professionalism, efficiency, and delivering top-notch results was evident throughout our non-bridal photoshoot. Their team's unwavering passion for their craft was truly remarkable.",
+    name: "Manisha Kaur",
     title: "Director of AlphaStream Technologies",
+    image: "/testimonial2.webp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Our collaboration with Glam Graphix Studios was an incredible experience. Their dedication to professionalism, swift execution, and ensuring exceptional outcomes were apparent throughout our combined Haldi, Mehendi, and wedding ceremonies. Their team's infectious enthusiasm for their work truly set them apart.",
+    name: "Sahil Johnson",
     title: "Director of AlphaStream Technologies",
+    image: "/testimonial3.webp",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
+      "Partnering with Glam Graphix Studios was an absolute joy. Their dedication to professionalism, promptness, and ensuring efficient creation and development of our wedding album was evident. Their team's genuine passion for their craft was truly commendable.",
+    name: "Ashish Kumar Das",
     title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    image: "/testimonial4.webp",
   },
 ];
 
@@ -188,31 +188,27 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Mohit Sati",
+    desc: "3+ Years of Experience in Film Making, Photography, Video Editing & Graphic Designing.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/mohitPh.webp",
+    link: "https://www.linkedin.com/in/mohit-sati-75695822a/",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Pooja",
+    desc: "Her Experience Comes Here. Please provide the same to Rohan.",
+    className: "md:col-span-1 justify-self-center", // change to md:col-span-2
+    thumbnail: "/exp3.svg",
+    link: "https://www.linkedin.com/in/mohit-sati-75695822a/",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Rohan Mathur",
+    desc: "2.5+ Years Experience in Software Development, Freelancing & Event Management.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/rohanPh.webp",
+    link: "https://www.linkedin.com/in/therohanmathur/",
   },
 ];
 

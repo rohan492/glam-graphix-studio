@@ -5,19 +5,17 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" id="process">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        Our <span className="text-purple">Process</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Personalized Consultation & Vision Crafting"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="Begin by sharing your love story with us as we build a personal connection and discuss your vision. Through this consultation, we tailor our services to meet your unique needs and provide you with a customized quote."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +24,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Reservation & Planning"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Once you're ready to proceed, secure your dates by signing a contract and providing a deposit. We then schedule a creative consultation to plan your engagement shoot and event details, including locations, timeline, and storyboard."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +44,9 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Capturing Your Memorable Moments"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="On the day of your event, our motivated team arrives to film every moment. With clear direction and communication, we ensure that all your timeless memories are captured. Within 4-7 months, your fully mastered edit is delivered via our online digital streaming service, allowing you to relive the magic of your special day."
         >
           <CanvasRevealEffect
             animationSpeed={3}
