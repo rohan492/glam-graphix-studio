@@ -4,6 +4,7 @@ import { StickyScroll } from "./ui/StickyScrollReveal";
 
 import Image from "next/image";
 import MediaRendering from "./MediaRendering";
+import RecentProjects from "./RecentProjects";
 
 const content = [
   {
@@ -79,8 +80,11 @@ const content = [
 export function Services() {
   return (
     <div className="" id="services">
+      <h1 className="heading pt-10 md:py-20">
+        Our Range of <span className="text-purple">Professional Services</span>
+      </h1>
       <MediaRendering minWidth={null} maxWidth="1023">
-        <div>Please see in Laptop for Services Section & give feedback</div>
+        <RecentProjects />
       </MediaRendering>
       <MediaRendering minWidth="1024" maxWidth={null}>
         <StickyScroll content={content} />
