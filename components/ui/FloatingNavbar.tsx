@@ -76,7 +76,7 @@ export const FloatingNav = ({
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
-        <Image
+        <img
           src="/logo.webp"
           alt="logo"
           width={60}
@@ -104,7 +104,7 @@ export const FloatingNav = ({
         </MediaRendering>
         <MediaRendering minWidth={null} maxWidth="1023">
           <button className="relative" onClick={() => setIsOpen(!isOpen)}>
-            <Image
+            <img
               src="/toggleIcon.png"
               alt="toggle icon"
               width="40"

@@ -14,7 +14,7 @@ const content = [
       "Capture your moments with our professional photography services. Work with our team to create stunning visuals, share ideas, and ensure your vision is realized. With our studio, you can streamline your projects and enhance your creative output.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
+        <img
           src="/service1.webp"
           width={300}
           height={300}
@@ -49,7 +49,7 @@ const content = [
       "Transform your ideas into stunning visuals with our graphic design services. Our talented team crafts unique and personalized designs tailored to your needs. With our studio, you can streamline the process and achieve outstanding results for your special day.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
+        <img
           src="/service2.webp"
           width={300}
           height={300}
@@ -66,7 +66,7 @@ const content = [
       "We are your one-stop solution for crafting all things creative. Our talented team handles everything from concept to execution, ensuring your vision comes to life beautifully. With our studio, you can streamline every project and achieve exceptional results effortlessly.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        <Image
+        <img
           src="/service3.webp"
           width={300}
           height={300}
