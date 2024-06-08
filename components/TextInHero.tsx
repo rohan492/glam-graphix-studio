@@ -28,7 +28,7 @@ const TextInHero = () => {
 
         <a href="#about">
           <MagicButton
-            title="Why Glam Graphix?"
+            title="Explore More"
             icon={<FaLocationArrow />}
             position="right"
           />
