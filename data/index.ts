@@ -408,7 +408,7 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/therohanmathur/",
+    link: "https://www.linkedin.com/company/glam-graphix-studios-1/",
   },
   {
     id: 4,
