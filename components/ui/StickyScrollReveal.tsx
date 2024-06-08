@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 export const StickyScroll = ({
   content,
   contentClassName,
+  active,
 }: {
   content: {
     id: number;
@@ -15,9 +16,11 @@ export const StickyScroll = ({
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
+  active: number;
 }) => {
   const [activeCard, setActiveCard] = React.useState(0);
   const ref = useRef<any>(null);
+  const divRef = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
     // target: ref,
@@ -51,6 +54,14 @@ export const StickyScroll = ({
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
     "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
   ];
+  useEffect(() => {
+    setActiveCard(0);
+
+    // Scroll the div into view
+    if (divRef.current) {
+      divRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [active]);
   return (
     <motion.div
       animate={{
@@ -62,7 +73,11 @@ export const StickyScroll = ({
       <div className="div relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <div
+              key={item.title + index}
+              className="my-20"
+              ref={index === 0 ? divRef : null}
+            >
               <motion.h2
                 initial={{
                   opacity: 0,
@@ -95,19 +110,11 @@ export const StickyScroll = ({
           background: linearGradients[activeCard % linearGradients.length],
         }}
         className={cn(
-          `hidden lg:block ${
-            activeCard === 0
-              ? "h-fit w-1/2"
-              : activeCard === 1
-              ? "h-fit w-1/2"
-              : activeCard === 3
-              ? "h-[110%] w-1/2"
-              : "h-fit w-1/2"
-          } rounded-md bg-white sticky top-10 overflow-hidden`,
+          `hidden lg:block h-[90%] w-1/2 rounded-md bg-white sticky top-10 overflow-hidden`,
           contentClassName
         )}
       >
-        {content[activeCard].content ?? null}
+        {content[activeCard]?.content ?? null}
       </motion.div>
     </motion.div>
   );
