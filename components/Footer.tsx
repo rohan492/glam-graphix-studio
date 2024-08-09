@@ -8,23 +8,23 @@ import MagicButton from "./MagicButton";
 const links = [
   {
     name: "Home",
-    link: "#hero",
+    link: "/#hero",
   },
   {
     name: "About",
-    link: "#about",
+    link: "/#about",
   },
   {
     name: "Services",
-    link: "#services",
+    link: "/#services",
   },
   {
     name: "Testimonials",
-    link: "#testimonials",
+    link: "/#testimonials",
   },
   {
     name: "Process",
-    link: "#process",
+    link: "/#process",
   },
 ];
 

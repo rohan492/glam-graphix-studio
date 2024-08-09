@@ -83,7 +83,7 @@ export const FloatingNav = ({
           height={60}
           className="cursor-pointer"
           onClick={() => {
-            window.location.href = "#hero";
+            window.location.href = "/";
             setIsOpen(false);
           }}
         />

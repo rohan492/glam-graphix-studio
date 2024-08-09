@@ -26,9 +26,9 @@ const TextInHero = () => {
           Your Visual Storytellers.
         </p>
 
-        <a href="#about">
+        <a href="/work">
           <MagicButton
-            title="Explore More"
+            title="Our Work"
             icon={<FaLocationArrow />}
             position="right"
           />
