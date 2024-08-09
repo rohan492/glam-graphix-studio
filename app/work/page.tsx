@@ -6,7 +6,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { navItems } from "@/data";
 import { cards } from "@/data/cards";
 
-export default function () {
+const Work = () => {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
@@ -18,4 +18,6 @@ export default function () {
       </div>
     </>
   );
-}
+};
+
+export default Work;

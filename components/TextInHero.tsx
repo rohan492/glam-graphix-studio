@@ -2,6 +2,7 @@ import React from "react";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
+import Link from "next/link";
 
 const TextInHero = () => {
   return (
@@ -26,13 +27,13 @@ const TextInHero = () => {
           Your Visual Storytellers.
         </p>
 
-        <a href="/work">
+        <Link href="/work">
           <MagicButton
             title="Our Work"
             icon={<FaLocationArrow />}
             position="right"
           />
-        </a>
+        </Link>
       </div>
     </div>
   );
